@@ -1,7 +1,6 @@
 package kr.co.ch08.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -27,13 +26,28 @@ public class SecurityUserService implements UserDetailsService{
 			throw new UsernameNotFoundException(username);
 		}
 		
+		
+		/*
+		// security가 제공하는 기본 사용자 객체생성
 		UserDetails userDts = User.builder()
 								.username(user.getUid())
 								.password(user.getPass())
 								.roles("MEMBER")
 								.build();
+		*/
 		
-		return userDts;
+		// security가 세션에 등록하는 객체(빌드 패턴, 빌드 초기화)
+		UserDetails myUser = MyUserDetails.builder()
+								.uid(user.getUid())
+								.pass(user.getPass())
+								.name(user.getName())
+								.grade(user.getGrade())
+								.hp(user.getHp())
+								.age(user.getAge())
+								.rdate(user.getRdate())
+								.build();
+		
+		return myUser;
 	}
 
 }
