@@ -1,5 +1,7 @@
 package kr.co.sboard;
 
+import java.security.Principal;
+
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,8 +18,15 @@ public class SboardApplication {
 	}
 	
 	@GetMapping(value = {"", "index"})
-	public String index() {
-		return "user/login";
+	public String index(Principal principal) {
+		
+		if(principal != null) {
+			// 로그인 했을 경우
+			return "redirect:/list";
+		}else {
+			// 로그인 안했을 경우
+			return "redirect:/user/login";
+		}
 	}
 
 }
