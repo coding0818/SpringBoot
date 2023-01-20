@@ -50,7 +50,11 @@ public class ArticleController {
 	}
 	
 	@GetMapping("modify")
-	public String modify() {
+	public String modify(int no, Model model) {
+		
+		ArticleVO article = service.selectArticle(no);
+		model.addAttribute("article", article);
+		
 		return "modify";
 	}
 	
