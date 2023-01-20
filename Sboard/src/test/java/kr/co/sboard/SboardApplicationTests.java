@@ -10,8 +10,6 @@ import kr.co.sboard.service.UserService;
 import kr.co.sboard.vo.UserVO;
 import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
-@SpringBootTest
 class SboardApplicationTests {
 
 	
@@ -41,13 +39,11 @@ class SboardApplicationTests {
 		
 		int result = service.insertUser(vo);
 		
-		log.info("result : "+result);
 	}
 	
 	@Test
 	public void countUid() {
 		
 		int result = repo.countUserEntityByUid("test101");
-		log.info("result : "+result);
 	}
 }
