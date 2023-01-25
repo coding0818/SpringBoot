@@ -3658,3 +3658,9 @@ Unconditional classes:
 2023-01-20 19:33:48.457  INFO 7636 --- [http-nio-8181-exec-1] o.a.c.c.C.[.[localhost].[/Sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-01-20 19:33:48.457  INFO 7636 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-01-20 19:33:48.458  INFO 7636 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-20 19:35:51.470  INFO 7636 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-01-20 19:35:51.484  INFO 7636 --- [RMI TCP Connection(7)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-20 19:35:51.484  INFO 7636 --- [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[.[localhost].[/Sboard]        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-01-20 19:35:51.493  INFO 7636 --- [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-20 19:35:51.493  INFO 7636 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-01-20 19:35:51.496  INFO 7636 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
