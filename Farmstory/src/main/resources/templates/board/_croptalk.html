@@ -14,7 +14,7 @@
     </aside>
     <article>
       <nav>
-        <img src="../img/sub_nav_tit_cate3_{value}.png(value=${cate})" alt="텃밭가꾸기"/>
+        <img th:src="@{/img/sub_nav_tit_cate3_{value}.png(value=${cate})}" alt="텃밭가꾸기"/>
         <p>
           HOME > 농작물이야기 >
           <em th:if="${cate}=='story'">농작물이야기</em>

@@ -1,6 +1,6 @@
 <html xmlns:th="http://www.thymeleaf.org">
-<th:block th:include="@{_header.html}"/>
-<th:block th:include="@{board/__${group}__.html}"/>
+<th:block th:replace="~{/_header}"/>
+<th:block th:replace="~{board/__${group}__}"/>
         <main id="board" class="write">
             
             <form th:action="@{/write}" method="post" enctype="multipart/form-data">
