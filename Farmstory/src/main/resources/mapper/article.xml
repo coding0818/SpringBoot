@@ -4,7 +4,8 @@
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.co.farmstory.dao.ArticleDAO">
 	<insert id="insertArticle" useGeneratedKeys="true" keyProperty="no">
-		insert into `board_article` set 
+		insert into `board_article` set
+			`cate`=#{cate},
 			`title` = #{title}, 
 			`content` = #{content}, 
 			<if test="fname.isEmpty() == true">
@@ -23,11 +24,22 @@
 			`newName` = #{newName},
 			`oriName` = #{oriName};
 	</insert>
+	<insert id="insertComment">
+		insert into `board_article` set
+		`parent`=#{no},
+		`content`=#{content},
+		`uid`=#{uid},
+		`regip`=#{regip},
+		`rdate`=NOW();
+	</insert>
 	<select id="selectArticles" resultType="kr.co.farmstory.vo.ArticleVO">
-		SELECT a.*,b.nick FROM `board_article` AS a JOIN `board_user` AS b ON a.uid=b.uid where `parent`=0 order by `no` desc limit #{start}, 10;
+		SELECT a.*,b.nick FROM `board_article` AS a
+		JOIN `board_user` AS b ON a.uid=b.uid
+		where `parent`=0 and `cate`=#{cate}
+		order by `no` desc limit #{start}, 10;
 	</select>
 	<select id="selectCountTotal" resultType="int">
-		select count(`no`) from `board_article` where `parent` = 0;
+		select count(`no`) from `board_article` where `parent` = 0 and `cate`=#{cate};
 	</select>
 	<select id="selectArticle" resultMap="selectArticleResultMap">
 		select * from `board_article` as a 
@@ -61,10 +73,17 @@
 	<select id="selectFile" resultType="kr.co.farmstory.vo.FileVO">
 		select * from `board_file` where `fno`=#{fno};
 	</select>
+	<select id="selectComments" resultType="kr.co.farmstory.vo.ArticleVO">
+		select a.*,b.nick from `board_article` as a
+		join `board_user` as b on a.uid = b.uid
+		where `parent`=#{no} order by `no` asc;
+	</select>
 	<update id="updateDownload">
 		update `board_file` set `download` = `download`+1 where `fno`=#{fno};
 	</update>
-	
+	<delete id="deleteArticle">
+		delete from `board_article` where `no`=#{no};
+	</delete>
 	
 	
 </mapper>

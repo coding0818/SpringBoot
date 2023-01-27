@@ -78,10 +78,14 @@ public class UserController {
     @ResponseBody
     @GetMapping("user/emailAuth")
     public Map<String, Integer> emailAuth(String email){
+        log.info("here1 : " + email);
         int[] result = service.sendEmailCode(email);
+
+        log.info("here2 : " + result[1]);
+
         Map<String, Integer> resultMap = new HashMap<>();
-        resultMap.put("status", result[0]);
-        resultMap.put("code", result[1]);
+        resultMap.put("code", result[0]);
+        resultMap.put("status", result[1]);
         return resultMap;
     }
 }

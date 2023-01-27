@@ -153,13 +153,14 @@ $(function(){
         isEmailCheck = true;
         $('.resultEmail').text('인증코드 전송 중 입니다. 잠시만 기다리세요...');
 
+        console.log("here1");
         $.ajax({
-            url:'/Farmstory/user/emailAuth'
+            url:'/Farmstory/user/emailAuth',
             method:'get',
                 data:{"email":email},
                 dataType:'json',
                 success: function(data){
-                    // console.log(data);
+                    console.log("here2 : "+data);
                     if(data.status == 1){
                         // 메일발송 성공
                         emailcode = data.code;
