@@ -78,8 +78,14 @@
 		join `board_user` as b on a.uid = b.uid
 		where `parent`=#{no} order by `no` asc;
 	</select>
+	<select id="selectComment" resultType="kr.co.farmstory.vo.ArticleVO">
+		SELECT a.*,b.nick from `board_article` AS a JOIN `board_user` AS b USING(`uid`) WHERE `parent`=#{no} ORDER BY `no` DESC LIMIT 1;
+	</select>
 	<update id="updateDownload">
 		update `board_file` set `download` = `download`+1 where `fno`=#{fno};
+	</update>
+	<update id="updateCommentPlus">
+		update `board_article` set `comment`=`comment`+1 where `no`=#{no};
 	</update>
 	<delete id="deleteArticle">
 		delete from `board_article` where `no`=#{no};

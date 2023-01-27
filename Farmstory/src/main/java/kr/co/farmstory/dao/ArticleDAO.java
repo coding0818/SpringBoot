@@ -16,9 +16,11 @@ public interface ArticleDAO {
     public int insertFile(FileVO vo);
     public int insertComment(ArticleVO vo);
     public ArticleVO selectArticle(int no);
-    public ArticleVO selectComments(int no);
+    public List<ArticleVO> selectComments(int no);
+    public ArticleVO selectComment(int no);
     public List<ArticleVO> selectArticles(@Param("cate") String cate, @Param("start") int start);
     public int updateArticle(ArticleVO vo);
+    public int updateCommentPlus(int no);
     public int deleteArticle(int no);
 
     public int selectCountTotal(String cate);

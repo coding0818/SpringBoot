@@ -7,10 +7,20 @@ $(function(){
 
         if(isDeleteOk){
             let article = $(this).closest('article');
+            let no = $(this).attr('data-no');
+            let parent = $(this).attr('data-parent');
 
+            console.log('here3');
+
+            let jsonData = {"no":no, "parent":parent};
+
+            $.ajax({
+                url:'/'
+            });
         }
     });
 
+    // 댓글 작성
     $('.commentForm > form').submit(function(){
         let no = $(this).children('input[name=no]').val();
         let uid = $(this).children('input[name=uid]').val();
@@ -30,7 +40,7 @@ $(function(){
             data:jsonData,
             dataType:'json',
             success:function(data){
-                if(data.comment > 0){
+                if(data.result > 0){
                     let comment = "<article>";
                         comment += "<span class='nick'>"+data.nick+"</span>";
                         comment += "<span class='date'>"+data.date+"</span>";

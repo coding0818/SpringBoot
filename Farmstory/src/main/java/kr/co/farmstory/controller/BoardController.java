@@ -71,7 +71,7 @@ public class BoardController {
     @GetMapping("board/view")
     public String view(Model model,String group, String cate, int no){
         ArticleVO article = service.selectArticle(no);
-        ArticleVO comments = service.selectComments(no);
+        List<ArticleVO> comments = service.selectComments(no);
         model.addAttribute("group", group);
         model.addAttribute("cate", cate);
         model.addAttribute("article", article);
@@ -105,9 +105,9 @@ public class BoardController {
 
     @ResponseBody
     @PostMapping("board/commentWrite")
-    public Map<String, ArticleVO> commentWrite(ArticleVO vo){
+    public Map<String, Object> commentWrite(ArticleVO vo){
 
-        Map<String, ArticleVO> resultMap = service.insertComment(vo);
+        Map<String, Object> resultMap = service.insertComment(vo);
 
         return resultMap;
     }

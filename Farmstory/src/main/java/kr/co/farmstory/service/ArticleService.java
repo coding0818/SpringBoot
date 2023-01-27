@@ -37,11 +37,17 @@ public class ArticleService {
     }
 
     @Transactional
-    public Map<String, ArticleVO> insertComment(ArticleVO vo){
+    public Map<String, Object> insertComment(ArticleVO vo){
         dao.insertComment(vo);
-        ArticleVO comment = dao.selectArticle(vo.getNo());
-        Map<String, ArticleVO> resultMap = new HashMap<>();
-        resultMap.put("comment", comment);
+        dao.updateCommentPlus(vo.getNo());
+        ArticleVO comment = dao.selectComment(vo.getNo());
+        Map<String, Object> resultMap = new HashMap<>();
+        resultMap.put("result", 1);
+        resultMap.put("no", comment.getNo());
+        resultMap.put("parent", comment.getParent());
+        resultMap.put("nick", comment.getNick());
+        resultMap.put("date", comment.getRdate().substring(2, 10));
+        resultMap.put("content", comment.getContent());
         return resultMap;
     }
     public ArticleVO selectArticle(int no){
@@ -50,7 +56,7 @@ public class ArticleService {
     public List<ArticleVO> selectArticles(String cate, int start){
         return dao.selectArticles(cate, start);
     }
-    public ArticleVO selectComments(int no){
+    public List<ArticleVO> selectComments(int no){
         return dao.selectComments(no);
     }
     public int updateArticle(ArticleVO vo){
