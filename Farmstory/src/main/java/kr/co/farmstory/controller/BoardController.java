@@ -112,4 +112,12 @@ public class BoardController {
         return resultMap;
     }
 
+    @ResponseBody
+    @GetMapping("board/commentDelete")
+    public Map<String, Integer> commentDelete(int no, int parent){
+
+        Map<String, Integer> resultMap = service.deleteComment(no, parent);
+        return resultMap;
+    }
+
 }

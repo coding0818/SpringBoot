@@ -22,6 +22,7 @@ public interface ArticleDAO {
     public int updateArticle(ArticleVO vo);
     public int updateCommentPlus(int no);
     public int deleteArticle(int no);
+    public int deleteComment(int no, int parent);
 
     public int selectCountTotal(String cate);
 }

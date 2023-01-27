@@ -15,7 +15,16 @@ $(function(){
             let jsonData = {"no":no, "parent":parent};
 
             $.ajax({
-                url:'/'
+                url:'/Farmstory/board/commentDelete',
+                method:'GET',
+                data:jsonData,
+                dataType:'json',
+                success:function(data){
+                    if(data.result){
+                        alert('댓글이 삭제되었습니다.');
+                        article.hide();
+                    }
+                }
             });
         }
     });

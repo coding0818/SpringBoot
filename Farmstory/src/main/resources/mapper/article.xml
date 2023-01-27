@@ -88,8 +88,10 @@
 		update `board_article` set `comment`=`comment`+1 where `no`=#{no};
 	</update>
 	<delete id="deleteArticle">
-		delete from `board_article` where `no`=#{no};
+		delete from `board_article` where `no`=#{no} or `parent`=#{no};
 	</delete>
-	
+	<delete id="deleteComment">
+		delete from `board_article` where `no`=#{no} and `parent`=#{parent};
+	</delete>
 	
 </mapper>

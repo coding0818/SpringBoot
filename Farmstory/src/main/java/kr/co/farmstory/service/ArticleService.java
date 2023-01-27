@@ -65,6 +65,12 @@ public class ArticleService {
     public int deleteArticle(int no){
         return dao.deleteArticle(no);
     }
+    public Map<String, Integer> deleteComment(int no, int parent){
+        int result = dao.deleteComment(no, parent);
+        Map<String, Integer> resultMap = new HashMap<>();
+        resultMap.put("result", result);
+        return resultMap;
+    }
 
     @Value("${spring.servlet.multipart.location}")
     private String uploadPath;
