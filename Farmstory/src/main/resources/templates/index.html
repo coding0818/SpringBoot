@@ -28,93 +28,75 @@
                     <a href="#"><img src="./img/main_latest1_tit.png" alt="텃밭 가꾸기"/></a>
                     <img src="./img/main_latest1_img.jpg" alt="이미지"/>
                     <table border="0">
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
+                        <th:block th:if="${#lists.size(grow) < 5}">
+                            <tr th:each="grow:${grow}">
+                                <td>></td>
+                                <td><a th:href="@{/board/view(group=_croptalk, cate=grow, no=${grow.no})}">[[${grow.title}]]</a></td>
+                                <td>[[${grow.rdate.substring(2, 10)}]]</td>
+                            </tr>
+                            <tr th:each="i : ${#numbers.sequence(1, 5 - #lists.size(grow))}">
+                                <td>></td>
+                                <td><a th:href="@{#}">무제</a></td>
+                                <td>00-00-00</td>
+                            </tr>
+                        </th:block>
+                        <th:block th:if="${#lists.size(grow) == 5}">
+                            <tr th:each="grow:${grow}">
+                                <td>></td>
+                                <td><a th:href="@{/board/view(group=_croptalk, cate=grow, no=${grow.no})}">[[${grow.title}]]</a></td>
+                                <td>[[${grow.rdate.substring(2, 10)}]]</td>
+                            </tr>
+                        </th:block>
                     </table>
                 </div>
                 <div>
                     <a href="#"><img src="./img/main_latest2_tit.png" alt="귀농학교"/></a>
                     <img src="./img/main_latest2_img.jpg" alt="이미지"/>
                     <table border="0">
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
+                        <th:block th:if="${#lists.size(school) < 5}">
+                            <tr th:each="school:${school}">
+                                <td>></td>
+                                <td><a th:href="@{/board/view(group=_croptalk, cate=school, no=${school.no})}">[[${school.title}]]</a></td>
+                                <td>[[${school.rdate.substring(2, 10)}]]</td>
+                            </tr>
+                            <tr th:each="i : ${#numbers.sequence(1, 5 - #lists.size(school))}">
+                                <td>></td>
+                                <td><a th:href="@{#}">무제</a></td>
+                                <td>00-00-00</td>
+                            </tr>
+                        </th:block>
+                        <th:block th:if="${#lists.size(school) == 5}">
+                            <tr th:each="school:${school}">
+                                <td>></td>
+                                <td><a th:href="@{/board/view(group=_croptalk, cate=school, no=${grow.no})}">[[${school.title}]]</a></td>
+                                <td>[[${school.rdate.substring(2, 10)}]]</td>
+                            </tr>
+                        </th:block>
                     </table>
                 </div>
                 <div>
                     <a href="#"><img src="./img/main_latest3_tit.png" alt="농작물 이야기"/></a>
                     <img src="./img/main_latest3_img.jpg" alt="이미지"/>
                     <table border="0">
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
-                        <tr>
-                            <td>></td>
-                            <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
-                            <td>20-12-22</td>
-                        </tr>
+                        <th:block th:if="${#lists.size(story) < 5}">
+                            <tr th:each="story:${story}">
+                                <td>></td>
+                                <td><a th:href="@{/board/view(group=_croptalk, cate=story, no=${story.no})}">[[${story.title}]]</a></td>
+                                <td>[[${story.rdate.substring(2, 10)}]]</td>
+                            </tr>
+                            <tr th:each="i : ${#numbers.sequence(1, 5 - #lists.size(story))}">
+                                <td>></td>
+                                <td><a th:href="@{#}">무제</a></td>
+                                <td>00-00-00</td>
+                            </tr>
+                        </th:block>
+                        <th:block th:if="${#lists.size(story) == 5}">
+                            <tr th:each="story:${story}">
+                                <td>></td>
+                                <td><a th:href="@{/board/view(group=_croptalk, cate=story, no=${story.no})}">[[${story.title}]]</a></td>
+                                <td>[[${story.rdate.substring(2, 10)}]]</td>
+                            </tr>
+                        </th:block>
                     </table>
                 </div>
                 

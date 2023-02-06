@@ -81,6 +81,9 @@
 	<select id="selectComment" resultType="kr.co.farmstory.vo.ArticleVO">
 		SELECT a.*,b.nick from `board_article` AS a JOIN `board_user` AS b USING(`uid`) WHERE `parent`=#{no} ORDER BY `no` DESC LIMIT 1;
 	</select>
+	<select id="selectLatest" resultType="kr.co.farmstory.vo.ArticleVO">
+		SELECT * FROM `board_article` WHERE `cate`=#{cate} ORDER BY `no` DESC LIMIT 5;
+	</select>
 	<update id="updateDownload">
 		update `board_file` set `download` = `download`+1 where `fno`=#{fno};
 	</update>

@@ -59,6 +59,7 @@ public class ArticleService {
     public List<ArticleVO> selectComments(int no){
         return dao.selectComments(no);
     }
+    public List<ArticleVO> selectLatest(String cate){return dao.selectLatest(cate);}
     public int updateArticle(ArticleVO vo){
         return dao.updateArticle(vo);
     }
