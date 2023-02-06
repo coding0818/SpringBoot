@@ -2215,3 +2215,397 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 2023-02-06 18:43:21.207  INFO 5544 --- [http-nio-8181-exec-6] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...21
 2023-02-06 18:43:21.207  INFO 5544 --- [http-nio-8181-exec-6] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...31
 2023-02-06 18:43:21.207  INFO 5544 --- [http-nio-8181-exec-6] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...41
+2023-02-06 19:03:08.556  INFO 5544 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-02-06 19:03:08.742  INFO 5544 --- [Thread-41] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-06 19:03:08.743  INFO 5544 --- [Thread-41] o.a.c.c.C.[.[localhost].[/Farmstory]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-06 19:03:08.764  WARN 5544 --- [Thread-41] o.a.c.c.C.[.[localhost].[/Farmstory]     : Cannot serialize session attribute [SPRING_SECURITY_CONTEXT] for session [9A73431AA1F92798ABBC37084EC83D7A]
+
+java.io.NotSerializableException: kr.co.farmstory.entity.UserEntity
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1185) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1553) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1510) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1433) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1179) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1553) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1510) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1433) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1179) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1553) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1510) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1433) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1179) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:349) ~[na:na]
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1761) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1067) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:317) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:268) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:384) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5459) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1409) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:983) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1409) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:983) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:495) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:982) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:496) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:273) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:331) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.stop(WebServerStartStopLifecycle.java:52) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:117) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:234) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$300(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:373) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:206) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:129) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1067) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.devtools.restart.Restarter.stop(Restarter.java:309) ~[spring-boot-devtools-2.7.8.jar:2.7.8]
+	at org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:251) ~[spring-boot-devtools-2.7.8.jar:2.7.8]
+	at org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:629) ~[spring-boot-devtools-2.7.8.jar:2.7.8]
+
+2023-02-06 19:03:08.769  INFO 5544 --- [Thread-41] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:03:08.770  INFO 5544 --- [Thread-41] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2023-02-06 19:03:08.771  INFO 5544 --- [Thread-41] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2023-02-06 19:03:08.860  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 11.0.16.1 on DESKTOP-QOTDKI5 with PID 5544 (C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory\out\production\classes started by java2 in C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory)
+2023-02-06 19:03:08.861  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-02-06 19:03:09.076  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-06 19:03:09.089  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-02-06 19:03:09.167  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-02-06 19:03:09.168  INFO 5544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-06 19:03:09.168  INFO 5544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-06 19:03:09.185  INFO 5544 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2023-02-06 19:03:09.186  INFO 5544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 323 ms
+2023-02-06 19:03:09.200  WARN 5544 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [9A73431AA1F92798ABBC37084EC83D7A]
+2023-02-06 19:03:09.217  INFO 5544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-06 19:03:09.223  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2023-02-06 19:03:09.311  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2023-02-06 19:03:09.311  INFO 5544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-02-06 19:03:09.399  INFO 5544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-06 19:03:09.399  INFO 5544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:03:09.506  INFO 5544 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@17cf56f4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e01de93, org.springframework.security.web.context.SecurityContextPersistenceFilter@251f865c, org.springframework.security.web.header.HeaderWriterFilter@7c760ca2, org.springframework.security.web.authentication.logout.LogoutFilter@5827f5e4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@702005c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29bb3ed5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6564345c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4325b889, org.springframework.security.web.session.SessionManagementFilter@2e395d41, org.springframework.security.web.access.ExceptionTranslationFilter@4389e43e, org.springframework.security.web.access.intercept.AuthorizationFilter@6c982238]
+2023-02-06 19:03:09.515  WARN 5544 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-06 19:03:09.551  INFO 5544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-06 19:03:09.590  INFO 5544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-06 19:03:09.598  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Farmstory'
+2023-02-06 19:03:09.601  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.767 seconds (JVM running for 4130.768)
+2023-02-06 19:03:09.602  INFO 5544 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-06 19:03:11.078  INFO 5544 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-02-06 19:03:11.266  INFO 5544 --- [Thread-45] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-06 19:03:11.272  INFO 5544 --- [Thread-45] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:03:11.273  INFO 5544 --- [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2023-02-06 19:03:11.278  INFO 5544 --- [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2023-02-06 19:03:11.358  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 11.0.16.1 on DESKTOP-QOTDKI5 with PID 5544 (C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory\out\production\classes started by java2 in C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory)
+2023-02-06 19:03:11.358  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-02-06 19:03:11.513  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-06 19:03:11.525  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2023-02-06 19:03:11.584  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-02-06 19:03:11.585  INFO 5544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-06 19:03:11.585  INFO 5544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-06 19:03:11.601  INFO 5544 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2023-02-06 19:03:11.601  INFO 5544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 241 ms
+2023-02-06 19:03:11.621  INFO 5544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-06 19:03:11.626  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2023-02-06 19:03:11.722  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2023-02-06 19:03:11.722  INFO 5544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-02-06 19:03:11.811  INFO 5544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-06 19:03:11.812  INFO 5544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:03:11.893  INFO 5544 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5866e05f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d0e6b13, org.springframework.security.web.context.SecurityContextPersistenceFilter@2720d32e, org.springframework.security.web.header.HeaderWriterFilter@aae19d5, org.springframework.security.web.authentication.logout.LogoutFilter@15a20fe1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5dbe210e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60cfb2aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ad57fd7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e721bf3, org.springframework.security.web.session.SessionManagementFilter@3133ee58, org.springframework.security.web.access.ExceptionTranslationFilter@6e0535bd, org.springframework.security.web.access.intercept.AuthorizationFilter@397f4801]
+2023-02-06 19:03:11.898  WARN 5544 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-06 19:03:11.923  INFO 5544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-06 19:03:11.956  INFO 5544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-06 19:03:11.960  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Farmstory'
+2023-02-06 19:03:11.963  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.628 seconds (JVM running for 4133.13)
+2023-02-06 19:03:11.963  INFO 5544 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-06 19:08:53.497  INFO 5544 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-02-06 19:08:53.691  INFO 5544 --- [Thread-49] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-06 19:08:53.697  INFO 5544 --- [Thread-49] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:08:53.697  INFO 5544 --- [Thread-49] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2023-02-06 19:08:53.700  INFO 5544 --- [Thread-49] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2023-02-06 19:08:53.784  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 11.0.16.1 on DESKTOP-QOTDKI5 with PID 5544 (C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory\out\production\classes started by java2 in C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory)
+2023-02-06 19:08:53.785  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-02-06 19:08:53.981  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-06 19:08:53.994  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-02-06 19:08:54.071  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-02-06 19:08:54.072  INFO 5544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-06 19:08:54.072  INFO 5544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-06 19:08:54.090  INFO 5544 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2023-02-06 19:08:54.090  INFO 5544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 303 ms
+2023-02-06 19:08:54.112  INFO 5544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-06 19:08:54.119  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2023-02-06 19:08:54.226  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2023-02-06 19:08:54.226  INFO 5544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-02-06 19:08:54.322  INFO 5544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-06 19:08:54.322  INFO 5544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:08:54.413  INFO 5544 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57f14ff5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b731dd8, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e64a62b, org.springframework.security.web.header.HeaderWriterFilter@283e0154, org.springframework.security.web.authentication.logout.LogoutFilter@653a6aed, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@612a2c3f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5476a611, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c9a396a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b85a25d, org.springframework.security.web.session.SessionManagementFilter@48eb5ef5, org.springframework.security.web.access.ExceptionTranslationFilter@33c73be5, org.springframework.security.web.access.intercept.AuthorizationFilter@599126e5]
+2023-02-06 19:08:54.420  WARN 5544 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-06 19:08:54.447  INFO 5544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-06 19:08:54.487  INFO 5544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-06 19:08:54.491  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Farmstory'
+2023-02-06 19:08:54.493  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.734 seconds (JVM running for 4475.66)
+2023-02-06 19:08:54.493  INFO 5544 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-06 19:08:55.967  INFO 5544 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-02-06 19:08:56.160  INFO 5544 --- [Thread-53] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-06 19:08:56.165  INFO 5544 --- [Thread-53] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:08:56.166  INFO 5544 --- [Thread-53] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2023-02-06 19:08:56.169  INFO 5544 --- [Thread-53] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2023-02-06 19:08:56.255  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 11.0.16.1 on DESKTOP-QOTDKI5 with PID 5544 (C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory\out\production\classes started by java2 in C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory)
+2023-02-06 19:08:56.255  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-02-06 19:08:56.438  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-06 19:08:56.449  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2023-02-06 19:08:56.514  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-02-06 19:08:56.514  INFO 5544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-06 19:08:56.514  INFO 5544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-06 19:08:56.531  INFO 5544 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2023-02-06 19:08:56.531  INFO 5544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 274 ms
+2023-02-06 19:08:56.552  INFO 5544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-06 19:08:56.558  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2023-02-06 19:08:56.652  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2023-02-06 19:08:56.653  INFO 5544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-02-06 19:08:56.741  INFO 5544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-06 19:08:56.741  INFO 5544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:08:56.823  INFO 5544 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69058f52, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@166d1f2, org.springframework.security.web.context.SecurityContextPersistenceFilter@389369ac, org.springframework.security.web.header.HeaderWriterFilter@71bfe71, org.springframework.security.web.authentication.logout.LogoutFilter@78e86c3d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@52b788bd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27cb725a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ffbe8a4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3aff7575, org.springframework.security.web.session.SessionManagementFilter@1fa77dac, org.springframework.security.web.access.ExceptionTranslationFilter@4a5aa3bf, org.springframework.security.web.access.intercept.AuthorizationFilter@2453ee2d]
+2023-02-06 19:08:56.829  WARN 5544 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-06 19:08:56.860  INFO 5544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-06 19:08:56.896  INFO 5544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-06 19:08:56.901  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Farmstory'
+2023-02-06 19:08:56.903  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.672 seconds (JVM running for 4478.069)
+2023-02-06 19:08:56.903  INFO 5544 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-06 19:10:07.142  INFO 5544 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-06 19:10:07.328  INFO 5544 --- [Thread-57] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-06 19:10:07.334  INFO 5544 --- [Thread-57] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:10:07.334  INFO 5544 --- [Thread-57] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2023-02-06 19:10:07.337  INFO 5544 --- [Thread-57] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2023-02-06 19:10:07.421  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 11.0.16.1 on DESKTOP-QOTDKI5 with PID 5544 (C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory\out\production\classes started by java2 in C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory)
+2023-02-06 19:10:07.421  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-02-06 19:10:07.604  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-06 19:10:07.616  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2023-02-06 19:10:07.711  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-02-06 19:10:07.711  INFO 5544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-06 19:10:07.712  INFO 5544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-06 19:10:07.729  INFO 5544 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2023-02-06 19:10:07.729  INFO 5544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 305 ms
+2023-02-06 19:10:07.759  INFO 5544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-06 19:10:07.766  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2023-02-06 19:10:07.852  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2023-02-06 19:10:07.852  INFO 5544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-02-06 19:10:07.935  INFO 5544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-06 19:10:07.935  INFO 5544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:10:08.017  INFO 5544 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59499e12, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bfa3d10, org.springframework.security.web.context.SecurityContextPersistenceFilter@58687af, org.springframework.security.web.header.HeaderWriterFilter@34d7b40, org.springframework.security.web.authentication.logout.LogoutFilter@2dd1c466, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7a9897d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4695baf4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e6a4e1d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1045dfa4, org.springframework.security.web.session.SessionManagementFilter@45defba6, org.springframework.security.web.access.ExceptionTranslationFilter@538dd06, org.springframework.security.web.access.intercept.AuthorizationFilter@3a1e2d56]
+2023-02-06 19:10:08.026  WARN 5544 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-06 19:10:08.051  INFO 5544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-06 19:10:08.089  INFO 5544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-06 19:10:08.093  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Farmstory'
+2023-02-06 19:10:08.095  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.699 seconds (JVM running for 4549.262)
+2023-02-06 19:10:08.096  INFO 5544 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-06 19:11:32.255  INFO 5544 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2023-02-06 19:11:32.443  INFO 5544 --- [Thread-61] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-06 19:11:32.449  INFO 5544 --- [Thread-61] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:11:32.450  INFO 5544 --- [Thread-61] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2023-02-06 19:11:32.453  INFO 5544 --- [Thread-61] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2023-02-06 19:11:32.536  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 11.0.16.1 on DESKTOP-QOTDKI5 with PID 5544 (C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory\out\production\classes started by java2 in C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory)
+2023-02-06 19:11:32.536  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-02-06 19:11:32.710  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-06 19:11:32.722  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2023-02-06 19:11:32.792  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-02-06 19:11:32.793  INFO 5544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-06 19:11:32.793  INFO 5544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-06 19:11:32.810  INFO 5544 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2023-02-06 19:11:32.810  INFO 5544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 272 ms
+2023-02-06 19:11:32.832  INFO 5544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-06 19:11:32.838  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2023-02-06 19:11:32.924  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2023-02-06 19:11:32.924  INFO 5544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-02-06 19:11:33.009  INFO 5544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-06 19:11:33.010  INFO 5544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:11:33.018  WARN 5544 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardController' defined in file [C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory\out\production\classes\kr\co\farmstory\controller\BoardController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [kr.co.farmstory.controller.BoardController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4b40f7c0]
+2023-02-06 19:11:33.018  INFO 5544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:11:33.018  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2023-02-06 19:11:33.019  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2023-02-06 19:11:33.019  INFO 5544 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-06 19:11:33.023  INFO 5544 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-06 19:11:33.029 ERROR 5544 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardController' defined in file [C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory\out\production\classes\kr\co\farmstory\controller\BoardController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [kr.co.farmstory.controller.BoardController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4b40f7c0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.8.jar:2.7.8]
+	at kr.co.farmstory.FarmstoryApplication.main(FarmstoryApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.8.jar:2.7.8]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [kr.co.farmstory.controller.BoardController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4b40f7c0]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:407) ~[spring-orm-5.3.25.jar:5.3.25]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:388) ~[spring-orm-5.3.25.jar:5.3.25]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:335) ~[spring-orm-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lkr/co/farmstory/service/ArticleService;
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3061) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2248) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.25.jar:5.3.25]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: kr.co.farmstory.service.ArticleService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:398) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.8.jar:2.7.8]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 30 common frames omitted
+
+2023-02-06 19:15:52.637  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 11.0.16.1 on DESKTOP-QOTDKI5 with PID 5544 (C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory\out\production\classes started by java2 in C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory)
+2023-02-06 19:15:52.637  INFO 5544 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-02-06 19:15:52.820  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-06 19:15:52.831  INFO 5544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2023-02-06 19:15:52.907  INFO 5544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-02-06 19:15:52.907  INFO 5544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-06 19:15:52.908  INFO 5544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-06 19:15:52.926  INFO 5544 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2023-02-06 19:15:52.926  INFO 5544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 287 ms
+2023-02-06 19:15:52.950  INFO 5544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-06 19:15:52.957  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2023-02-06 19:15:53.047  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2023-02-06 19:15:53.047  INFO 5544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-02-06 19:15:53.130  INFO 5544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-06 19:15:53.131  INFO 5544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:15:53.138  WARN 5544 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mainController' defined in file [C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory\out\production\classes\kr\co\farmstory\controller\MainController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [kr.co.farmstory.controller.MainController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6ff7fd4c]
+2023-02-06 19:15:53.138  INFO 5544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:15:53.139  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2023-02-06 19:15:53.140  INFO 5544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2023-02-06 19:15:53.140  INFO 5544 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-06 19:15:53.144  INFO 5544 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-06 19:15:53.151 ERROR 5544 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mainController' defined in file [C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory\out\production\classes\kr\co\farmstory\controller\MainController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [kr.co.farmstory.controller.MainController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6ff7fd4c]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.8.jar:2.7.8]
+	at kr.co.farmstory.FarmstoryApplication.main(FarmstoryApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.8.jar:2.7.8]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [kr.co.farmstory.controller.MainController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6ff7fd4c]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:407) ~[spring-orm-5.3.25.jar:5.3.25]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:388) ~[spring-orm-5.3.25.jar:5.3.25]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:335) ~[spring-orm-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lkr/co/farmstory/service/ArticleService;
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3061) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2248) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.25.jar:5.3.25]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: kr.co.farmstory.service.ArticleService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:398) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.8.jar:2.7.8]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 30 common frames omitted
+
+2023-02-06 19:17:45.525  INFO 3584 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 11.0.16.1 on DESKTOP-QOTDKI5 with PID 3584 (C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory\out\production\classes started by java2 in C:\Users\java2\Desktop\Workspace\SpringBoot\Farmstory)
+2023-02-06 19:17:45.528  INFO 3584 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-02-06 19:17:45.629  INFO 3584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-06 19:17:45.630  INFO 3584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-06 19:17:46.462  INFO 3584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-06 19:17:46.527  INFO 3584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2023-02-06 19:17:47.756  INFO 3584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-02-06 19:17:47.790  INFO 3584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-06 19:17:47.791  INFO 3584 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-06 19:17:47.905  INFO 3584 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2023-02-06 19:17:47.906  INFO 3584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2276 ms
+2023-02-06 19:17:48.158  INFO 3584 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-06 19:17:48.216  INFO 3584 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-06 19:17:48.433  INFO 3584 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-06 19:17:48.542  INFO 3584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-06 19:17:48.782  INFO 3584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-06 19:17:48.797  INFO 3584 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-02-06 19:17:49.557  INFO 3584 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-06 19:17:49.567  INFO 3584 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-06 19:17:50.461  INFO 3584 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a8161ed, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3520eaf3, org.springframework.security.web.context.SecurityContextPersistenceFilter@10e88529, org.springframework.security.web.header.HeaderWriterFilter@303cbb4b, org.springframework.security.web.authentication.logout.LogoutFilter@a7b4c54, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@193ede10, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57e792ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52b439e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@567e5fe, org.springframework.security.web.session.SessionManagementFilter@e56ec68, org.springframework.security.web.access.ExceptionTranslationFilter@376bf067, org.springframework.security.web.access.intercept.AuthorizationFilter@3bd09185]
+2023-02-06 19:17:50.506  WARN 3584 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-06 19:17:50.655  INFO 3584 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-06 19:17:50.935  INFO 3584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-06 19:17:50.968  INFO 3584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Farmstory'
+2023-02-06 19:17:50.976  INFO 3584 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 5.989 seconds (JVM running for 6.594)
+2023-02-06 19:17:51.078  INFO 3584 --- [http-nio-8181-exec-1] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-06 19:17:51.079  INFO 3584 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-06 19:17:51.081  INFO 3584 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-02-06 19:17:59.574  WARN 3584 --- [http-nio-8181-exec-5] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [221] milliseconds.
+2023-02-06 19:28:58.233  INFO 3584 --- [http-nio-8181-exec-2] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...1
+2023-02-06 19:28:58.234  INFO 3584 --- [http-nio-8181-exec-2] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...21
+2023-02-06 19:28:58.234  INFO 3584 --- [http-nio-8181-exec-2] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...31
+2023-02-06 19:28:58.235  INFO 3584 --- [http-nio-8181-exec-2] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...41
+2023-02-06 19:29:01.381  INFO 3584 --- [http-nio-8181-exec-9] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...1
+2023-02-06 19:29:01.381  INFO 3584 --- [http-nio-8181-exec-9] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...21
+2023-02-06 19:29:01.381  INFO 3584 --- [http-nio-8181-exec-9] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...31
+2023-02-06 19:29:01.381  INFO 3584 --- [http-nio-8181-exec-9] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...40
+2023-02-06 19:29:02.199  INFO 3584 --- [http-nio-8181-exec-2] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...1
+2023-02-06 19:29:02.200  INFO 3584 --- [http-nio-8181-exec-2] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...21
+2023-02-06 19:29:02.200  INFO 3584 --- [http-nio-8181-exec-2] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...31
+2023-02-06 19:29:02.200  INFO 3584 --- [http-nio-8181-exec-2] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...40
+2023-02-06 19:30:26.604  WARN 3584 --- [http-nio-8181-exec-7] org.apache.catalina.connector.Request    : Creating the temporary upload location [C:\Users\java2\AppData\Local\Temp\tomcat.8181.14605786345201972274\work\Tomcat\localhost\Farmstory\file] as it is required by the servlet [dispatcherServlet]
+2023-02-06 19:30:26.638  INFO 3584 --- [http-nio-8181-exec-7] k.c.f.controller.BoardController         : BoardController...write...Post
+2023-02-06 19:30:26.699  INFO 3584 --- [http-nio-8181-exec-7] k.c.f.controller.BoardController         : BoardController...write...Post...1
+2023-02-06 19:30:26.723  INFO 3584 --- [http-nio-8181-exec-9] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...1
+2023-02-06 19:30:26.723  INFO 3584 --- [http-nio-8181-exec-9] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...21
+2023-02-06 19:30:26.723  INFO 3584 --- [http-nio-8181-exec-9] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...31
+2023-02-06 19:30:26.723  INFO 3584 --- [http-nio-8181-exec-9] kr.co.farmstory.service.ArticleService   : ArticleService...getPageGroup...41

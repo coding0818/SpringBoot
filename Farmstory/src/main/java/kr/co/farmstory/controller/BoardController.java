@@ -120,4 +120,13 @@ public class BoardController {
         return resultMap;
     }
 
+    @ResponseBody
+    @GetMapping("board/getLatests")
+    public Map<String, List<ArticleVO>> getLatests(String cate){
+        List<ArticleVO> notices = service.selectLatestNotice(cate);
+        Map<String, List<ArticleVO>> resultMap = new HashMap<>();
+        resultMap.put("result", notices);
+        return resultMap;
+    }
+
 }

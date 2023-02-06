@@ -84,6 +84,9 @@
 	<select id="selectLatest" resultType="kr.co.farmstory.vo.ArticleVO">
 		SELECT * FROM `board_article` WHERE `cate`=#{cate} ORDER BY `no` DESC LIMIT 5;
 	</select>
+	<select id="selectLatestNotice" resultType="kr.co.farmstory.vo.ArticleVO">
+		SELECT * FROM `board_article` WHERE `cate`=#{cate} ORDER BY `no` DESC LIMIT 3;
+	</select>
 	<update id="updateDownload">
 		update `board_file` set `download` = `download`+1 where `fno`=#{fno};
 	</update>

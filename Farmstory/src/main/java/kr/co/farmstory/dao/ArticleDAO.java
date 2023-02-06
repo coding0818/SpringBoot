@@ -20,6 +20,7 @@ public interface ArticleDAO {
     public ArticleVO selectComment(int no);
     public List<ArticleVO> selectArticles(@Param("cate") String cate, @Param("start") int start);
     public List<ArticleVO> selectLatest(String cate);
+    public List<ArticleVO> selectLatestNotice(String cate);
     public int updateArticle(ArticleVO vo);
     public int updateCommentPlus(int no);
     public int deleteArticle(int no);
