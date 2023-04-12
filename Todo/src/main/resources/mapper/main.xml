@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.co.todo.dao.MainDAO">
+	<insert id="insertContent" parameterType="kr.co.todo.vo.MainVO"
+            useGeneratedKeys="true" keyProperty="itemNo" keyColumn="itemNo">
+		insert into `main` set `content`=#{content}, `rdate`=NOW(), `status`=#{status};
+	</insert>
+	<select id="selectReady" resultType="kr.co.todo.vo.MainVO">
+		select * from `main` where `status`=1;
+	</select>
+	<select id="selectDone" resultType="kr.co.todo.vo.MainVO">
+		select * from `main` where `status`=3;
+	</select>
+	<select id="selectDoing" resultType="kr.co.todo.vo.MainVO">
+		select * from `main` where `status`=2;
+	</select>
+	<update id="updateContent">
+		update `main` set `status`=#{status} where `itemNo`=#{itemNo}; 
+	</update>
+	<delete id="deleteContent">
+		delete from `main` where `itemNo`=#{itemNo} and `status`=#{status};
+	</delete>
+</mapper>
